@@ -16,7 +16,7 @@ while (i < numLocations):
     location = input(f"What is the name of Location {i}? \n")
 
     #THIS IS AQI FOR PM2.5
-    PM2_5 = ((((float((input("-> Enter PM-2.5 concentration: \n")))) * 10)//1) /10) 
+    PM2_5 = ((((float((input("-> Enter PM-2.5 concentration: \n")))) * 10)//1) /10) #moves the number to the next decimal place and chops off anything after it and then moves the decimal back
     if(0<= PM2_5 <= 12.0):
         clow, chigh, ilow, ihigh = 0, 12.0, 0, 50    
     elif(12.1<= PM2_5 <= 35.4):
